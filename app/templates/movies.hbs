@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Top 10 Indie Movies
+            <small>according to an anonymous github user</small>
+        </h1>
+    </div>
+</di>
+
+<div class="row">
+	{{#each}}
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="{{unbound poster}}" alt="">
+                </a>
+                <h2>
+                    {{show_title}}
+                    <span class="small pull-right">Rating: {{rating}}</span>
+                </h2>
+                <h4>
+                   Director: <a href="#">{{director}}</a>
+                </h4>
+                <p>{{summary}}</p>
+            </div>
+	{{/each}}
+</div>
